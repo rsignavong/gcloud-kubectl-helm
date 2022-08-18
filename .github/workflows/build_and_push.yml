@@ -19,6 +19,7 @@ jobs:
             rsignavong/gcloud-kubectl-helm
           tags: |
             type=sha
+            type=raw,value=latest,enable={{is_default_branch}}
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
